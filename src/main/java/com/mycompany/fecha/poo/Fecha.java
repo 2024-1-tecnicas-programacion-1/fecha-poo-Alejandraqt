@@ -29,7 +29,7 @@ public class Fecha {
      *
      * Complejidad temporal: O(1) Tiempo Constante
      */
-    String fechaCorta(){
+    public String fechaCorta(){
         String resultado = dia+"/"+mes+"/"+anio;
         return resultado;
     }
@@ -40,7 +40,7 @@ public class Fecha {
      *
      * Complejidad temporal: O(1) Tiempo Constante
      */
-    boolean validarFecha(){
+    public boolean validarFecha(){
         boolean resultado;
         
         if ((dia>0 && dia<=31) && (mes>0 && mes<=12) && (anio>0)) {
@@ -57,7 +57,7 @@ public class Fecha {
      *
      * Complejidad temporal: O(1) Tiempo Constante
      */
-    String mesLetra(){
+    public String mesLetra(){
         String resultado;
         
         switch (mes) {
@@ -109,7 +109,7 @@ public class Fecha {
      *
      * Complejidad temporal: O(1) Tiempo Constante
      */
-    String fechaLarga(){
+    public String fechaLarga(){
         String mesNuevo = mesLetra();
         String resultado = dia+" de "+mesNuevo+" de "+anio;
         return resultado;
