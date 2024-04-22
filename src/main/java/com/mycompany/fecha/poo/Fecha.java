@@ -1,9 +1,9 @@
 package com.mycompany.fecha.poo;
 
 public class Fecha {    
-    int dia;
-    int mes;
-    int anio;
+    private int dia;
+    private int mes;
+    private int anio;
         
     /***************************************************/
     /******************** Métodos ********************/
